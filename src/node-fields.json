@@ -1,0 +1,1484 @@
+{
+  "aliased_import": {
+    "alias": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "identifier",
+          "named": true
+        }
+      ]
+    },
+    "name": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "dotted_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  "assignment": {
+    "left": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "expression_list",
+          "named": true
+        }
+      ]
+    },
+    "right": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "kind": "assignment",
+          "named": true
+        },
+        {
+          "kind": "augmented_assignment",
+          "named": true
+        },
+        {
+          "kind": "expression_list",
+          "named": true
+        },
+        {
+          "kind": "yield",
+          "named": true
+        }
+      ]
+    },
+    "type": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "kind": "type",
+          "named": true
+        }
+      ]
+    }
+  },
+  "augmented_assignment": {
+    "left": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "expression_list",
+          "named": true
+        }
+      ]
+    },
+    "right": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "assignment",
+          "named": true
+        },
+        {
+          "kind": "augmented_assignment",
+          "named": true
+        },
+        {
+          "kind": "expression_list",
+          "named": true
+        },
+        {
+          "kind": "yield",
+          "named": true
+        }
+      ]
+    }
+  },
+  "call": {
+    "arguments": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "argument_list",
+          "named": true
+        },
+        {
+          "kind": "generator_expression",
+          "named": true
+        }
+      ]
+    },
+    "function": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "attribute",
+          "named": true
+        },
+        {
+          "kind": "binary_operator",
+          "named": true
+        },
+        {
+          "kind": "call",
+          "named": true
+        },
+        {
+          "kind": "concatenated_string",
+          "named": true
+        },
+        {
+          "kind": "dictionary",
+          "named": true
+        },
+        {
+          "kind": "dictionary_comprehension",
+          "named": true
+        },
+        {
+          "kind": "ellipsis",
+          "named": true
+        },
+        {
+          "kind": "false",
+          "named": true
+        },
+        {
+          "kind": "float",
+          "named": true
+        },
+        {
+          "kind": "generator_expression",
+          "named": true
+        },
+        {
+          "kind": "identifier",
+          "named": true
+        },
+        {
+          "kind": "integer",
+          "named": true
+        },
+        {
+          "kind": "keyword_identifier",
+          "named": true
+        },
+        {
+          "kind": "list",
+          "named": true
+        },
+        {
+          "kind": "list_comprehension",
+          "named": true
+        },
+        {
+          "kind": "none",
+          "named": true
+        },
+        {
+          "kind": "parenthesized_expression",
+          "named": true
+        },
+        {
+          "kind": "set",
+          "named": true
+        },
+        {
+          "kind": "set_comprehension",
+          "named": true
+        },
+        {
+          "kind": "string",
+          "named": true
+        },
+        {
+          "kind": "subscript",
+          "named": true
+        },
+        {
+          "kind": "true",
+          "named": true
+        },
+        {
+          "kind": "tuple",
+          "named": true
+        },
+        {
+          "kind": "unary_operator",
+          "named": true
+        }
+      ]
+    }
+  },
+  "class_definition": {
+    "body": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "assert_statement",
+          "named": true
+        },
+        {
+          "kind": "block",
+          "named": true
+        },
+        {
+          "kind": "break_statement",
+          "named": true
+        },
+        {
+          "kind": "continue_statement",
+          "named": true
+        },
+        {
+          "kind": "delete_statement",
+          "named": true
+        },
+        {
+          "kind": "exec_statement",
+          "named": true
+        },
+        {
+          "kind": "expression_statement",
+          "named": true
+        },
+        {
+          "kind": "future_import_statement",
+          "named": true
+        },
+        {
+          "kind": "global_statement",
+          "named": true
+        },
+        {
+          "kind": "import_from_statement",
+          "named": true
+        },
+        {
+          "kind": "import_statement",
+          "named": true
+        },
+        {
+          "kind": "nonlocal_statement",
+          "named": true
+        },
+        {
+          "kind": "pass_statement",
+          "named": true
+        },
+        {
+          "kind": "print_statement",
+          "named": true
+        },
+        {
+          "kind": "raise_statement",
+          "named": true
+        },
+        {
+          "kind": "return_statement",
+          "named": true
+        }
+      ]
+    },
+    "name": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "identifier",
+          "named": true
+        }
+      ]
+    },
+    "superclasses": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "kind": "argument_list",
+          "named": true
+        }
+      ]
+    }
+  },
+  "elif_clause": {
+    "condition": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "attribute",
+          "named": true
+        },
+        {
+          "kind": "await",
+          "named": true
+        },
+        {
+          "kind": "binary_operator",
+          "named": true
+        },
+        {
+          "kind": "boolean_operator",
+          "named": true
+        },
+        {
+          "kind": "call",
+          "named": true
+        },
+        {
+          "kind": "comparison_operator",
+          "named": true
+        },
+        {
+          "kind": "concatenated_string",
+          "named": true
+        },
+        {
+          "kind": "conditional_expression",
+          "named": true
+        },
+        {
+          "kind": "dictionary",
+          "named": true
+        },
+        {
+          "kind": "dictionary_comprehension",
+          "named": true
+        },
+        {
+          "kind": "ellipsis",
+          "named": true
+        },
+        {
+          "kind": "false",
+          "named": true
+        },
+        {
+          "kind": "float",
+          "named": true
+        },
+        {
+          "kind": "generator_expression",
+          "named": true
+        },
+        {
+          "kind": "identifier",
+          "named": true
+        },
+        {
+          "kind": "integer",
+          "named": true
+        },
+        {
+          "kind": "keyword_identifier",
+          "named": true
+        },
+        {
+          "kind": "lambda",
+          "named": true
+        },
+        {
+          "kind": "list",
+          "named": true
+        },
+        {
+          "kind": "list_comprehension",
+          "named": true
+        },
+        {
+          "kind": "named_expression",
+          "named": true
+        },
+        {
+          "kind": "none",
+          "named": true
+        },
+        {
+          "kind": "not_operator",
+          "named": true
+        },
+        {
+          "kind": "parenthesized_expression",
+          "named": true
+        },
+        {
+          "kind": "set",
+          "named": true
+        },
+        {
+          "kind": "set_comprehension",
+          "named": true
+        },
+        {
+          "kind": "string",
+          "named": true
+        },
+        {
+          "kind": "subscript",
+          "named": true
+        },
+        {
+          "kind": "true",
+          "named": true
+        },
+        {
+          "kind": "tuple",
+          "named": true
+        },
+        {
+          "kind": "unary_operator",
+          "named": true
+        }
+      ]
+    },
+    "consequence": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "assert_statement",
+          "named": true
+        },
+        {
+          "kind": "block",
+          "named": true
+        },
+        {
+          "kind": "break_statement",
+          "named": true
+        },
+        {
+          "kind": "continue_statement",
+          "named": true
+        },
+        {
+          "kind": "delete_statement",
+          "named": true
+        },
+        {
+          "kind": "exec_statement",
+          "named": true
+        },
+        {
+          "kind": "expression_statement",
+          "named": true
+        },
+        {
+          "kind": "future_import_statement",
+          "named": true
+        },
+        {
+          "kind": "global_statement",
+          "named": true
+        },
+        {
+          "kind": "import_from_statement",
+          "named": true
+        },
+        {
+          "kind": "import_statement",
+          "named": true
+        },
+        {
+          "kind": "nonlocal_statement",
+          "named": true
+        },
+        {
+          "kind": "pass_statement",
+          "named": true
+        },
+        {
+          "kind": "print_statement",
+          "named": true
+        },
+        {
+          "kind": "raise_statement",
+          "named": true
+        },
+        {
+          "kind": "return_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  "else_clause": {
+    "body": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "assert_statement",
+          "named": true
+        },
+        {
+          "kind": "block",
+          "named": true
+        },
+        {
+          "kind": "break_statement",
+          "named": true
+        },
+        {
+          "kind": "continue_statement",
+          "named": true
+        },
+        {
+          "kind": "delete_statement",
+          "named": true
+        },
+        {
+          "kind": "exec_statement",
+          "named": true
+        },
+        {
+          "kind": "expression_statement",
+          "named": true
+        },
+        {
+          "kind": "future_import_statement",
+          "named": true
+        },
+        {
+          "kind": "global_statement",
+          "named": true
+        },
+        {
+          "kind": "import_from_statement",
+          "named": true
+        },
+        {
+          "kind": "import_statement",
+          "named": true
+        },
+        {
+          "kind": "nonlocal_statement",
+          "named": true
+        },
+        {
+          "kind": "pass_statement",
+          "named": true
+        },
+        {
+          "kind": "print_statement",
+          "named": true
+        },
+        {
+          "kind": "raise_statement",
+          "named": true
+        },
+        {
+          "kind": "return_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  "for_statement": {
+    "alternative": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "kind": "else_clause",
+          "named": true
+        }
+      ]
+    },
+    "body": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "assert_statement",
+          "named": true
+        },
+        {
+          "kind": "block",
+          "named": true
+        },
+        {
+          "kind": "break_statement",
+          "named": true
+        },
+        {
+          "kind": "continue_statement",
+          "named": true
+        },
+        {
+          "kind": "delete_statement",
+          "named": true
+        },
+        {
+          "kind": "exec_statement",
+          "named": true
+        },
+        {
+          "kind": "expression_statement",
+          "named": true
+        },
+        {
+          "kind": "future_import_statement",
+          "named": true
+        },
+        {
+          "kind": "global_statement",
+          "named": true
+        },
+        {
+          "kind": "import_from_statement",
+          "named": true
+        },
+        {
+          "kind": "import_statement",
+          "named": true
+        },
+        {
+          "kind": "nonlocal_statement",
+          "named": true
+        },
+        {
+          "kind": "pass_statement",
+          "named": true
+        },
+        {
+          "kind": "print_statement",
+          "named": true
+        },
+        {
+          "kind": "raise_statement",
+          "named": true
+        },
+        {
+          "kind": "return_statement",
+          "named": true
+        }
+      ]
+    },
+    "left": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "variables",
+          "named": true
+        }
+      ]
+    },
+    "right": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "expression_list",
+          "named": true
+        }
+      ]
+    }
+  },
+  "function_definition": {
+    "body": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "assert_statement",
+          "named": true
+        },
+        {
+          "kind": "block",
+          "named": true
+        },
+        {
+          "kind": "break_statement",
+          "named": true
+        },
+        {
+          "kind": "continue_statement",
+          "named": true
+        },
+        {
+          "kind": "delete_statement",
+          "named": true
+        },
+        {
+          "kind": "exec_statement",
+          "named": true
+        },
+        {
+          "kind": "expression_statement",
+          "named": true
+        },
+        {
+          "kind": "future_import_statement",
+          "named": true
+        },
+        {
+          "kind": "global_statement",
+          "named": true
+        },
+        {
+          "kind": "import_from_statement",
+          "named": true
+        },
+        {
+          "kind": "import_statement",
+          "named": true
+        },
+        {
+          "kind": "nonlocal_statement",
+          "named": true
+        },
+        {
+          "kind": "pass_statement",
+          "named": true
+        },
+        {
+          "kind": "print_statement",
+          "named": true
+        },
+        {
+          "kind": "raise_statement",
+          "named": true
+        },
+        {
+          "kind": "return_statement",
+          "named": true
+        }
+      ]
+    },
+    "name": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "identifier",
+          "named": true
+        }
+      ]
+    },
+    "parameters": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "parameters",
+          "named": true
+        }
+      ]
+    },
+    "return_type": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "kind": "type",
+          "named": true
+        }
+      ]
+    }
+  },
+  "future_import_statement": {
+    "name": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "kind": "aliased_import",
+          "named": true
+        },
+        {
+          "kind": "dotted_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  "if_statement": {
+    "alternative": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "kind": "elif_clause",
+          "named": true
+        },
+        {
+          "kind": "else_clause",
+          "named": true
+        }
+      ]
+    },
+    "condition": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "attribute",
+          "named": true
+        },
+        {
+          "kind": "await",
+          "named": true
+        },
+        {
+          "kind": "binary_operator",
+          "named": true
+        },
+        {
+          "kind": "boolean_operator",
+          "named": true
+        },
+        {
+          "kind": "call",
+          "named": true
+        },
+        {
+          "kind": "comparison_operator",
+          "named": true
+        },
+        {
+          "kind": "concatenated_string",
+          "named": true
+        },
+        {
+          "kind": "conditional_expression",
+          "named": true
+        },
+        {
+          "kind": "dictionary",
+          "named": true
+        },
+        {
+          "kind": "dictionary_comprehension",
+          "named": true
+        },
+        {
+          "kind": "ellipsis",
+          "named": true
+        },
+        {
+          "kind": "false",
+          "named": true
+        },
+        {
+          "kind": "float",
+          "named": true
+        },
+        {
+          "kind": "generator_expression",
+          "named": true
+        },
+        {
+          "kind": "identifier",
+          "named": true
+        },
+        {
+          "kind": "integer",
+          "named": true
+        },
+        {
+          "kind": "keyword_identifier",
+          "named": true
+        },
+        {
+          "kind": "lambda",
+          "named": true
+        },
+        {
+          "kind": "list",
+          "named": true
+        },
+        {
+          "kind": "list_comprehension",
+          "named": true
+        },
+        {
+          "kind": "named_expression",
+          "named": true
+        },
+        {
+          "kind": "none",
+          "named": true
+        },
+        {
+          "kind": "not_operator",
+          "named": true
+        },
+        {
+          "kind": "parenthesized_expression",
+          "named": true
+        },
+        {
+          "kind": "set",
+          "named": true
+        },
+        {
+          "kind": "set_comprehension",
+          "named": true
+        },
+        {
+          "kind": "string",
+          "named": true
+        },
+        {
+          "kind": "subscript",
+          "named": true
+        },
+        {
+          "kind": "true",
+          "named": true
+        },
+        {
+          "kind": "tuple",
+          "named": true
+        },
+        {
+          "kind": "unary_operator",
+          "named": true
+        }
+      ]
+    },
+    "consequence": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "assert_statement",
+          "named": true
+        },
+        {
+          "kind": "block",
+          "named": true
+        },
+        {
+          "kind": "break_statement",
+          "named": true
+        },
+        {
+          "kind": "continue_statement",
+          "named": true
+        },
+        {
+          "kind": "delete_statement",
+          "named": true
+        },
+        {
+          "kind": "exec_statement",
+          "named": true
+        },
+        {
+          "kind": "expression_statement",
+          "named": true
+        },
+        {
+          "kind": "future_import_statement",
+          "named": true
+        },
+        {
+          "kind": "global_statement",
+          "named": true
+        },
+        {
+          "kind": "import_from_statement",
+          "named": true
+        },
+        {
+          "kind": "import_statement",
+          "named": true
+        },
+        {
+          "kind": "nonlocal_statement",
+          "named": true
+        },
+        {
+          "kind": "pass_statement",
+          "named": true
+        },
+        {
+          "kind": "print_statement",
+          "named": true
+        },
+        {
+          "kind": "raise_statement",
+          "named": true
+        },
+        {
+          "kind": "return_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  "import_from_statement": {
+    "module_name": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "dotted_name",
+          "named": true
+        },
+        {
+          "kind": "relative_import",
+          "named": true
+        }
+      ]
+    },
+    "name": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "kind": "aliased_import",
+          "named": true
+        },
+        {
+          "kind": "dotted_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  "import_statement": {
+    "name": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "kind": "aliased_import",
+          "named": true
+        },
+        {
+          "kind": "dotted_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  "print_statement": {
+    "argument": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "kind": "attribute",
+          "named": true
+        },
+        {
+          "kind": "await",
+          "named": true
+        },
+        {
+          "kind": "binary_operator",
+          "named": true
+        },
+        {
+          "kind": "boolean_operator",
+          "named": true
+        },
+        {
+          "kind": "call",
+          "named": true
+        },
+        {
+          "kind": "comparison_operator",
+          "named": true
+        },
+        {
+          "kind": "concatenated_string",
+          "named": true
+        },
+        {
+          "kind": "conditional_expression",
+          "named": true
+        },
+        {
+          "kind": "dictionary",
+          "named": true
+        },
+        {
+          "kind": "dictionary_comprehension",
+          "named": true
+        },
+        {
+          "kind": "ellipsis",
+          "named": true
+        },
+        {
+          "kind": "false",
+          "named": true
+        },
+        {
+          "kind": "float",
+          "named": true
+        },
+        {
+          "kind": "generator_expression",
+          "named": true
+        },
+        {
+          "kind": "identifier",
+          "named": true
+        },
+        {
+          "kind": "integer",
+          "named": true
+        },
+        {
+          "kind": "keyword_identifier",
+          "named": true
+        },
+        {
+          "kind": "lambda",
+          "named": true
+        },
+        {
+          "kind": "list",
+          "named": true
+        },
+        {
+          "kind": "list_comprehension",
+          "named": true
+        },
+        {
+          "kind": "named_expression",
+          "named": true
+        },
+        {
+          "kind": "none",
+          "named": true
+        },
+        {
+          "kind": "not_operator",
+          "named": true
+        },
+        {
+          "kind": "parenthesized_expression",
+          "named": true
+        },
+        {
+          "kind": "set",
+          "named": true
+        },
+        {
+          "kind": "set_comprehension",
+          "named": true
+        },
+        {
+          "kind": "string",
+          "named": true
+        },
+        {
+          "kind": "subscript",
+          "named": true
+        },
+        {
+          "kind": "true",
+          "named": true
+        },
+        {
+          "kind": "tuple",
+          "named": true
+        },
+        {
+          "kind": "unary_operator",
+          "named": true
+        }
+      ]
+    }
+  },
+  "try_statement": {
+    "body": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "assert_statement",
+          "named": true
+        },
+        {
+          "kind": "block",
+          "named": true
+        },
+        {
+          "kind": "break_statement",
+          "named": true
+        },
+        {
+          "kind": "continue_statement",
+          "named": true
+        },
+        {
+          "kind": "delete_statement",
+          "named": true
+        },
+        {
+          "kind": "exec_statement",
+          "named": true
+        },
+        {
+          "kind": "expression_statement",
+          "named": true
+        },
+        {
+          "kind": "future_import_statement",
+          "named": true
+        },
+        {
+          "kind": "global_statement",
+          "named": true
+        },
+        {
+          "kind": "import_from_statement",
+          "named": true
+        },
+        {
+          "kind": "import_statement",
+          "named": true
+        },
+        {
+          "kind": "nonlocal_statement",
+          "named": true
+        },
+        {
+          "kind": "pass_statement",
+          "named": true
+        },
+        {
+          "kind": "print_statement",
+          "named": true
+        },
+        {
+          "kind": "raise_statement",
+          "named": true
+        },
+        {
+          "kind": "return_statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  "while_statement": {
+    "alternative": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "kind": "else_clause",
+          "named": true
+        }
+      ]
+    },
+    "body": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "assert_statement",
+          "named": true
+        },
+        {
+          "kind": "block",
+          "named": true
+        },
+        {
+          "kind": "break_statement",
+          "named": true
+        },
+        {
+          "kind": "continue_statement",
+          "named": true
+        },
+        {
+          "kind": "delete_statement",
+          "named": true
+        },
+        {
+          "kind": "exec_statement",
+          "named": true
+        },
+        {
+          "kind": "expression_statement",
+          "named": true
+        },
+        {
+          "kind": "future_import_statement",
+          "named": true
+        },
+        {
+          "kind": "global_statement",
+          "named": true
+        },
+        {
+          "kind": "import_from_statement",
+          "named": true
+        },
+        {
+          "kind": "import_statement",
+          "named": true
+        },
+        {
+          "kind": "nonlocal_statement",
+          "named": true
+        },
+        {
+          "kind": "pass_statement",
+          "named": true
+        },
+        {
+          "kind": "print_statement",
+          "named": true
+        },
+        {
+          "kind": "raise_statement",
+          "named": true
+        },
+        {
+          "kind": "return_statement",
+          "named": true
+        }
+      ]
+    },
+    "condition": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "kind": "attribute",
+          "named": true
+        },
+        {
+          "kind": "await",
+          "named": true
+        },
+        {
+          "kind": "binary_operator",
+          "named": true
+        },
+        {
+          "kind": "boolean_operator",
+          "named": true
+        },
+        {
+          "kind": "call",
+          "named": true
+        },
+        {
+          "kind": "comparison_operator",
+          "named": true
+        },
+        {
+          "kind": "concatenated_string",
+          "named": true
+        },
+        {
+          "kind": "conditional_expression",
+          "named": true
+        },
+        {
+          "kind": "dictionary",
+          "named": true
+        },
+        {
+          "kind": "dictionary_comprehension",
+          "named": true
+        },
+        {
+          "kind": "ellipsis",
+          "named": true
+        },
+        {
+          "kind": "false",
+          "named": true
+        },
+        {
+          "kind": "float",
+          "named": true
+        },
+        {
+          "kind": "generator_expression",
+          "named": true
+        },
+        {
+          "kind": "identifier",
+          "named": true
+        },
+        {
+          "kind": "integer",
+          "named": true
+        },
+        {
+          "kind": "keyword_identifier",
+          "named": true
+        },
+        {
+          "kind": "lambda",
+          "named": true
+        },
+        {
+          "kind": "list",
+          "named": true
+        },
+        {
+          "kind": "list_comprehension",
+          "named": true
+        },
+        {
+          "kind": "named_expression",
+          "named": true
+        },
+        {
+          "kind": "none",
+          "named": true
+        },
+        {
+          "kind": "not_operator",
+          "named": true
+        },
+        {
+          "kind": "parenthesized_expression",
+          "named": true
+        },
+        {
+          "kind": "set",
+          "named": true
+        },
+        {
+          "kind": "set_comprehension",
+          "named": true
+        },
+        {
+          "kind": "string",
+          "named": true
+        },
+        {
+          "kind": "subscript",
+          "named": true
+        },
+        {
+          "kind": "true",
+          "named": true
+        },
+        {
+          "kind": "tuple",
+          "named": true
+        },
+        {
+          "kind": "unary_operator",
+          "named": true
+        }
+      ]
+    }
+  }
+}

@@ -8,8 +8,8 @@ Identifiers with Greek letters
 
 (module
   (expression_statement (assignment
-    (expression_list (identifier))
-    (expression_list (binary_operator (identifier) (identifier))))))
+    left: (expression_list (identifier))
+    right: (expression_list (binary_operator (identifier) (identifier))))))
 
 =====================================
 Subscript expressions
